@@ -1,0 +1,49 @@
+{
+  "parameters": 110720,
+  "quantized_engine": "fbgemm",
+  "settings": {
+    "prompt": "Guard:",
+    "tokens": 100,
+    "runs": 3
+  },
+  "theoretical_weight_mb": {
+    "fp32": 0.42236328125,
+    "fp16": 0.211181640625,
+    "int8": 0.1055908203125
+  },
+  "variants": {
+    "fp32": {
+      "size_mb": 0.4314689636230469,
+      "size_ratio_vs_fp32": 1.0,
+      "loss": 0.16237892657518388,
+      "tokens_per_sec": 1624.0646711944642
+    },
+    "dynamic": {
+      "size_mb": 0.14735984802246094,
+      "size_ratio_vs_fp32": 2.927995443896504,
+      "loss": 0.1654080256819725,
+      "tokens_per_sec": 1130.2090360038887
+    },
+    "static": {
+      "size_mb": 0.17679786682128906,
+      "size_ratio_vs_fp32": 2.4404647600142404,
+      "loss": 0.1685750290751457,
+      "tokens_per_sec": 1017.3794178276778
+    }
+  },
+  "skipped": {},
+  "linear_microbenchmark": {
+    "this model's MLP layer": {
+      "shape": "64x256, 64 rows",
+      "fp32_ms": 0.02139575153705664,
+      "int8_ms": 0.03005144899361767,
+      "speedup": 0.7119707120146078
+    },
+    "larger reference layer": {
+      "shape": "512x2048, 64 rows",
+      "fp32_ms": 0.5978163004328962,
+      "int8_ms": 0.20174090168438852,
+      "speedup": 2.963287540808873
+    }
+  }
+}
