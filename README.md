@@ -1,5 +1,5 @@
-[![Built with askThili](https://msrit.ask.thili.ai/api/v1/public/projects/3nark7r9dd/badge.svg)](https://msrit.ask.thili.ai/b/3nark7r9dd)
 # Quantized Game Dialogue Simulator
+[![Built with askThili](https://msrit.ask.thili.ai/api/v1/public/projects/3nark7r9dd/badge.svg)](https://msrit.ask.thili.ai/b/3nark7r9dd)
 
 Train a tiny GPT on game dialogue, quantize it (dynamic and static post-training
 quantization), then measure what quantization does to model size, output quality
